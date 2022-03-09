@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import SubContainer from "../SubContainer"
 import SocialLinks from "../UI/SocialLinks"
 import { FadeUpIn } from "../../styles/Keyframes"
