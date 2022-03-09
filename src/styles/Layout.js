@@ -1,7 +1,7 @@
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import styled from "styled-components"
-import Footer from "../components/sections/Footer"
+import Footer from "../components/Sections/Footer"
 import "@fontsource/poppins"
 import "@fontsource/poppins/700.css"
 import "@fontsource/open-sans"
