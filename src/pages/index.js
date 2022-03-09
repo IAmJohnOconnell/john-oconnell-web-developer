@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../styles/Layout"
 import { graphql } from "gatsby"
-import Hero from "../components/sections/Hero"
-import About from "../components/sections/About"
-import Skills from "../components/sections/Skills"
-import RecentWork from "../components/sections/RecentWork"
-import Articles from "../components/sections/Articles"
+import Hero from "../components/Sections/Hero"
+import About from "../components/Sections/About"
+import Skills from "../components/Sections/Skills"
+import RecentWork from "../components/Sections/RecentWork"
+import Articles from "../components/Sections/Articles"
 
 const IndexPage = ({ data }) => {
 	return (
