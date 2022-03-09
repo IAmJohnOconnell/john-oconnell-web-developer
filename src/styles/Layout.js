@@ -1,6 +1,5 @@
 import React from "react"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
-import styled from "styled-components"
+import { createGlobalStyle, ThemeProvider, styled } from "styled-components"
 import Footer from "../components/Sections/Footer"
 import "@fontsource/poppins"
 import "@fontsource/poppins/700.css"
