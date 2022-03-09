@@ -1,0 +1,82 @@
+---
+title: Subsonar
+stack: React, Axios
+description: This keeps track of monthly subscriptions and when they are due.
+demo: https://iamjohnoconnell.github.io/SubSonar
+repo: https://github.com/IAmJohnOconnell/subsonar
+thumb: ../images/thumbs/subSonar.png
+frontPage: false
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# SubSonar
+
+A helpful bit of JavaScript to help calculate your montly subscription spending.
+
+I mean, they really sneak up on you!
+
+| Stack | Repo                                                      | Demo                                                       |
+| ----- | --------------------------------------------------------- | ---------------------------------------------------------- |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/subsonar) | [Check it Out](https://iamjohnoconnell.github.io/SubSonar) |
+| CSS   |                                                           |                                                            |
+| JS    |                                                           |                                                            |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='IMAGE ALT' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+Every so often I have the shocking realization that I'm spending way to much on streaming services, subscriptions, and other nagging monthly bills. It took me doing this manually several times before thinking "There's got to be a better way!".
+So I cameup with this. SubSonar! To detect all of those sneaky costs hiding beneath the surface every month....Then i built a to do list!..kinda.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+Who else but the Big Three? HTML5, CSS3, ES6. Miami who?
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+Can you really improve on those greatieants?...OK. I get it, Yeah. It looked better in my head. Nevermind! currently, this is a very colorful line-item calculator, which is great, but I think its time for some LocalStorage...and copy a color pallette from somewhere....maybe that first.
+
+It would be great to add a date control to better visualize when the charges are due. Another cool feature would be to add some additional math related components to calculate how much is going to what services, various frequencies.
+
+Track the "usefullness" of each service. This could be used to determine the real value of a given service, and help a user choose which to cut back on.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+Excessive use of gradients. They could perhaps be a bit more subtle.
+
+A lot of time was spent spinning the submarine around when you scrolled. An embarrassing amount, I got quite distracted. This needs to better utilize the date information. As of now it serves little to no purpose, but should be used to add a recurrance feature to the app. That, and some LocalStorage would make this far more useful beyond a one and done calculator.
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+I learned about TrueBill. Jokes aside, It was nice to solve a problem of mine. Although this doesnt really have any "tracking" to it. It is a nice way to visualise what I'm spending each month on silly things like streaming services.
+
+</LessonsLearned>

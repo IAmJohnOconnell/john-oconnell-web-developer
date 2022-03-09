@@ -1,54 +1,49 @@
 import * as React from "react"
+import Layout from "../styles/Layout"
 import { Link } from "gatsby"
+import SubContainer from "../components/SubContainer"
+import TextContentFull from "../components/TextContentFull"
+import styled from "styled-components"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+const FourOhFour = styled.main`
+	span {
+		color: ${({ theme }) => theme.textColorSecondary};
+	}
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+	a,
+	a:visited,
+	a:active {
+		border-bottom: 2px solid transparent;
+		color: ${({ theme }) => theme.textColorSecondary};
+		text-decoration: none;
+		transition: ${({ theme }) => theme.transitionStandard};
 
-// markup
+		:hover {
+			border-bottom: 2px solid ${({ theme }) => theme.textColor};
+		}
+	}
+`
+
 const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+	return (
+		<Layout>
+			<FourOhFour>
+				<SubContainer>
+					<TextContentFull>
+						<title>Not found</title>
+						<h1>
+							Executing Order: <span>404</span>
+							<br />
+							<br />
+							These aren't the Droids your looking for...
+						</h1>
+						<h2>You want to go home and rethink your life</h2>
+						<Link to={"/"}>This is the Way</Link>
+					</TextContentFull>
+				</SubContainer>
+			</FourOhFour>
+		</Layout>
+	)
 }
 
 export default NotFoundPage

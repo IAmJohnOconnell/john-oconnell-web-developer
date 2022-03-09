@@ -1,0 +1,77 @@
+---
+title: Pokedex V1
+stack: JavaScript
+description: A JavaScript re-creation of a Pokedex. A user can use it to view basic data points on the original 151 Pokemon, provided by the PokeAPI.
+demo: https://iamjohnoconnell.github.io/pokedex/
+repo: https://github.com/IAmJohnOconnell/pokedex
+thumb: ../images/thumbs/pokedex.png
+frontPage: true
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# Pokedex V1
+
+A JavaScript re-creation of a Pokedex. A user can use it to view basic data points on the original 151 Pokemon, provided by the PokeAPI.
+
+| Stack | Repo                                                         | Demo                                                        |
+| ----- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/weather-app) | [Check it Out](https://weatherapp-iamjoconnell.netlify.app) |
+| CSS   |                                                              |                                                             |
+| JS    |                                                              |                                                             |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='IMAGE ALT TEXT' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+This was built for some pratice working with API's and async functions. I've always been a fan of the franchise so thought this would be fun to work on.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+Since I'm only looking to pull data, I didnt think it was necessary to beef up the project with a framework or extra bells and whistles. I opted to stick with the "Big 3". HTML CSS and Javascript, along with Axios to make the http requests easier to work with.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+This does its job but is pretty bare bones. It could be freshened up with some interactive UX, and a smaller card design, currently the app takes up a lot of the viewport and could be scaled down.
+
+Also, I've noticed that some of the pokemon descriptions come in a variety of languages, which could be filtered appropriately.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+My biggest hurdle here was traversing through all of the nested data I wanted to take advantage of. Particlarly, the pokemon descriptions were tricky to get working properly.
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+# Lessons Learned
+
+Building this gave me a lot of confidence working with API's and asynchronus code. It was a fun way to re-enforce what I knew about error handling and different methods of form validation.
+
+The PokeAPI has a lot of deeply nested data that required some finesse to access and format the way I wanted.
+
+</LessonsLearned>

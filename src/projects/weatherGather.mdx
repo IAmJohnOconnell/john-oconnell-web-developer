@@ -1,0 +1,73 @@
+---
+title: Weather Gather
+stack: JS
+description: Uses OpenWeatherAPI to gather weather data and add it to a growing list of locations.
+demo: weathergather-iamjoconnell.netlify.app
+repo: https://github.com/IAmJohnOconnell/WeatherGather
+thumb: ../images/thumbs/weatherGather.png
+frontPage: false
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# Weather Gather
+
+A look at API's and DOM manipulation. This gathers data from OpenWeatherAPI and adds it to a list.
+
+| Stack | Repo                                                           | Demo                                                   |
+| ----- | -------------------------------------------------------------- | ------------------------------------------------------ |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/WeatherGather) | [Check it Out](weathergather-iamjoconnell.netlify.app) |
+| CSS   |                                                                |                                                        |
+| JS    |                                                                |                                                        |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='IMAGE ALT' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+This was intended to get familliar with fetching data API's. I was able to practice some DOM manipulation as well. It was a good way to get reinforce some fundamental JavaScript concepts.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+This was made using only HTML, CSS and JavaScript. I used Netlify to host it and Axios to gather the data from OpenWeatherAPI. Working with the data was easy as I was only getting top level data from the API response, and didnt need to get into any nested values. Looing back, it was interesting to see Promises at work with Axios, that was when i knew more about Axios then Promises. I have a much better understanding of both now.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+This is simple, but does the job of providing a some practice in working with API's and DOM manipulation. Although it does the job, It could be expanded upon in a ton of ways. It isnt styled too well. And the to-do style of collecting weather location history isnt presented well and doesnt make a lot of sense how its being used.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+Had to come up with a solution for concealing sensitive information, which is actually a lot easier with a node based projects.
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+DOM manipulation, early experience working with API data and Axios.
+
+</LessonsLearned>

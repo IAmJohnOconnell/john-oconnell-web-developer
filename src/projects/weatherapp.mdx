@@ -1,0 +1,79 @@
+---
+title: Weather App - React
+stack: React
+description: Using OpenWeatherAPI this React app displays weather information and weekly forecast data for a specifed location
+demo: https://weatherapp-iamjoconnell.netlify.app
+repo: https://github.com/IAmJohnOconnell/weather-app
+thumb: ../images/thumbs/WeatherApp.png
+frontPage: true
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# Weather App
+
+Using OpenWeatherAPI, this React app displays weather information for a specifed location
+
+| Stack             | Repo                                                         | Demo                                                        |
+| ----------------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+| React             | [Repository](https://github.com/IAmJohnOconnell/weather-app) | [Check it Out](https://weatherapp-iamjoconnell.netlify.app) |
+| Styled-Components |                                                              |                                                             |
+| Axios             |                                                              |                                                             |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='weather app' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+This is an updated version of an app I built previously using only vanilla JavaScript. For some practice with React, I decided to rebuild and improve on it. This time, I wanted to to improve on the design and funtionality.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+For the weather data, of course I opted for OpenWeatherAPI. It's an easy to use API that allows me to query all sorts of weather data. For my UI I wanted to use React to get better acquainted with it. I chose Styled Components as my primary method for styling the app, since it goes hand-in-hand with React. My favorite tool for HTTP requests is Axios, once I got somewhat familliar with promises, I've havent looked back, it makes performing get requests and CRUD operations just a bit easier. Syntatic Sugar? Yes, please!
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+For me, hindsight is 20/20 when it comes to design asthetic. Looking back on a project, I often find aspects of the design I could imporove. I think the colors could use some adjusting. Currently I feel like they might be adding an undesireable "mood" to the page.
+
+The initial state of the app could be better too. Instead of hiding everything until data is populated, a cool solution would be to request the users location data, and use that for the initial state data.
+
+A more noticable effect would be nice to indicate when the location has changed.
+
+A light / dark mode toggler would be a nice addition as well! I can probably even re-use a component from another project because React is cool like that.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+OpenWeatherAPI is great. I'm very appreciative of that team for this API, its free tier and relative simplicity. However, when It came time to gather data for the weekly forcest section, It became a bit draining working with such deeply nested data. On the bright side, this provided lots of practice workiing with various array methods.
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+Revisiting something that I have already done was an interesting exercise because it gave me an appreciation for what a framework like React can provide over vanilla JavaScript. I developed a deeper appreciation for component based thinking and have seen the benefits of modularity. With that, React comes with its own quirks, but being able to reevaluate a problem with a different set of tools, leads you to thoroughly consider the problem solving process, and appreciate a clever solution when you come across one.
+
+</LessonsLearned>

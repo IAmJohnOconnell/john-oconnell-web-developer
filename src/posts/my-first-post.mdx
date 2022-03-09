@@ -1,0 +1,202 @@
+---
+title: "Wrap Your Head Around: CSS Animations"
+date: "2015-05-01"
+description: "An Intro to CSS Animations"
+---
+
+<ProjectHeader>
+
+# Wrap Your Head Around: CSS Animations
+
+</ProjectHeader>
+
+<BlogTextContent>
+
+# Introduction
+
+I really appreciate a good UX. When a site I’m browsing comes to life, I really get a kick out of it. A lot of the web can be kind of, familiar. You see certain design elements so frequently that they start to feel predictable. When I encounter a great animation or find myself pleasantly surprised by an interactive element, I appreciate it. It's memorable and I find it leaves a lasting impression. It’s one of the reasons I enjoy visiting Apple’s website. They always find a way to add a refreshing flair to their pages. I almost always hear myself saying "Oh, that's cool!"
+
+One way we can bring a similar flair in our own work is by using CSS animations. CSS provide us with a set of tools that makes it easy to add animation sequences of own design to our DOM elements. Let’s take a look at how we can use animations in our work to make our pages and components more interesting.
+
+#### Before We Get Started
+
+I've included a several examples. If you want to see the code in action, you can check out the CodePen [here](https://codepen.io/IAmJohnOConnell/pen/jOaLWPb). Fork yourself a copy and experiement!
+
+# General Concepts
+
+## The Animation and Transition Properties
+
+When animating things in CSS we are given two properties to handle the task. _`Transition`_ and _`Animation`_. Each has their own advantages and disadvantages and choosing which to use depends on what you’re trying to accomplish.
+
+### Transition
+
+The quickest way to get an animation working is with the `transition` property. It gives us the ability to describe how an element changes from one state to another. You can think of these as "A to B" animations. Usually, these are used in conjunction with pseudo-selectors like `:hover`, because they can be used to easily trigger a state change.
+
+Transitions are easy to understand and use, but are limited when you want to add more complexity to an animation. If you need more control over the timing and other characteristics of your animation we need to use the `animation` property instead.
+
+### Animation
+
+The `animation` property lets us configure things like the timing, duration, and other details of how our animation should progress. `animation` is actually a shorthand for `animation-name` which also has several sub-properties that we can use to further configure our animation sequence. These sub-properties along with the use of `keyframes` allow us to do things that are not possible with the `transition` property alone.
+
+A list of `animations` sub-properties can be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+
+despite the added flexibility we gain from using `animation` and its sub-properties, it's not often that we find ourselves needing _all_ of them. Actually, we really only need to give it a name and duration (A duration is not technically required either, but the initial value is 0s. So, if you want your animation to play, you need to specify a duration). Because of this, I opt to use the `animation` shorthand property on its own, only change the properties I need and allow the browser to handle the rest.
+
+## Keyframes
+
+Another fundamental concept to understand when it comes to animations, of Keyframes.
+
+### What is a Keyframe anyway?
+
+Take a moment to think about a classic, “flip-book” style animation.
+There is a slightly different drawing on each page, then as the reader quickly flips through the pages, the images appear one after the other, giving the appearance of motion. Each of these individual pages is called a `frame`.
+
+A `Key frame` (or `keyframe`) then, is essentially a moment in time in our animation. We can use `keyframes` to define what we want to happen in our animation, and when it should occur. The browser then uses a process called `tweening` to calculate what should be happening between the `keyframes` we’ve defined, and fills them in for us, this is how the illusion of motion is created.
+
+`Keyframes` are used to control the steps in an animation sequence, by allowing us to define the styles for that particular frame.
+
+#### Did You Know?
+
+The concept of keyframes goes well beyond CSS! Keyframes are an essential part of both animation and filmmaking. You can read more about keyframes [here](https://en.wikipedia.org/wiki/Key_frame)
+
+### How To Use Keyframes
+
+Using `keyframes` is fairly simple. We define our animation by giving it a name, and specifying where our keyframes exist in our animation sequence, by using a percentage of time. Within each keyframe we can define the styles of our element.
+
+```css
+@keyframes slidein {
+	from {
+		transform: translateX(0%);
+	}
+
+	to {
+		transform: translateX(100%);
+	}
+}
+```
+
+This creates an animation called `slidein`. We’ll use this name to reference the animation later in our CSS rule. Notice how rather than using a percentage above, I’ve used the values `from` and `to`. This is another way of saying `0%` (from) and `100%` (to), in a more readable way.
+
+```css
+@keyframes slidein {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+```
+
+# What Have We Learned So Far?
+
+We now know that we have two primary options when it comes to using animations in CSS. The `transition` property let’s us make simple “a to b” animations, and the `animation` property gives us complete control over our animations along with some added complexity.
+
+We can then use `keyframes` or a pseudo selector to trigger our animation on the proper element.
+
+Now that we have basic understanding of the fundamentals, let’s see them in action.
+
+# Examples
+
+In our example we have a box that we are going animate by using two methods we just learned about.
+
+## Using the Animation Property
+
+First we use the animation property to apply our animation to the box element.
+
+We do this by using the same name that we define in our `keyframes`, which references the animation we want to use.
+
+```css
+.box {
+	animation: colorChange 3s;
+}
+
+@keyframes colorChange {
+	from {
+		background-color: blue;
+	}
+	to {
+		background-color: green;
+	}
+}
+```
+
+Notice that because we are using the animation property, which is a shorthand we can specify the other parameters we need and omit what we don’t and the browser will handle the rest. We’ve specified a name ( colorChange) and and duration (3s) for our animation.
+
+Below our box element we’ve defined our colorChange animation using the `keyframes` at-rule. We also use the aliases “from” and “to”. Because we want our box to go _from_ (0%) blue _to_ (100%) green.
+
+## Using the Transition Property
+
+And here is the exact same animation but this time we use the `transition` property to achieve the same results.
+
+```css
+.box {
+	background-color: blue;
+	transition: all 3s linear;
+}
+
+.box:hover {
+	background-color: red;
+}
+```
+
+Rather than use `keyframes`, like we do when using the `animation` property. When using `transition` we don't need a separate name or keyframe rule for the animation. Instead, since we are just changing our element’s color from one state to another, we can make use of pseudo-selectors, in this case `:hover`, to act as the trigger for our animation.
+
+## Adding Complexity w/ the Animation Property
+
+As I mentioned earlier, the `animation` property can be used to add additional complexity to our animation sequences that the transition property is not equipped to handle.
+
+Let’s revisit our earlier example, but this time, I want to make it so that the box changes colors a few more times. Lets change it to cycle though all of the colors of the rainbow. (ROYGBIV)
+
+After some quick math, we know that each color change should take roughly 14% of our total animation. (100 / 7 = 14.28). Lets add the remaining `keyframes` and test our new animation.
+
+```css
+.box {
+	animation: colorChange 3s;
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: red;
+	}
+
+	14% {
+		background-color: orange;
+	}
+
+	42% {
+		background-color: yellow;
+	}
+
+	56% {
+		background-color: green;
+	}
+
+	70% {
+		background-color: blue;
+	}
+
+	84% {
+		background-color: indigo;
+	}
+
+	98% {
+		background-color: violet;
+	}
+}
+```
+
+After adding the remaining `keyframes` and telling our CSS what color we’d like our element to be at each one, we’ll see our updated animation come to life. Our box element will cycle through each of the colors, playing our animation sequence just as we’ve defined it in our keyframes.
+
+# The End
+
+By now you should have a better understanding of CSS animations. Some nice animations can be the difference between an average site and a pleasant one, so take the time to dive into the topic even further. This is a good start, but what we've covered here is only the beginning of what is possible.
+
+Thanks for reading!
+
+### Live Examples
+
+If you want to see the examples in this article in action, you can fork the CodePen [here](https://codepen.io/IAmJohnOConnell/pen/jOaLWPb).
+
+</BlogTextContent>

@@ -1,0 +1,73 @@
+---
+title: Project Title
+stack: Project Stack
+description: Project Description
+demo: Demo Link
+repo: Repo Link
+thumb: thumbnail Image
+frontPage: false
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# PROJECT TITLE
+
+PROJECT DESCRIPTION GOES HERE
+
+| Stack | Repo                                                         | Demo                                                        |
+| ----- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/weather-app) | [Check it Out](https://weatherapp-iamjoconnell.netlify.app) |
+| CSS   |                                                              |                                                             |
+| JS    |                                                              |                                                             |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='IMAGE ALT TEXT' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+PURPOSE AND GOAL
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+STACK AND EXPLAIN
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+ROOM FOR IMPROVEMENTS
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+PROBLEMS AND THOUGHT PROCESS
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+LESSONS LEARNED
+
+</LessonsLearned>

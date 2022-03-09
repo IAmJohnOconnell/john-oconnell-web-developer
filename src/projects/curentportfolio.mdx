@@ -1,0 +1,88 @@
+---
+title: My Current Portfolio (This Site!)
+stack: React, Gatsby, Styled-Components
+description: My homepage and most recent portoflio. Rebuilt using Gatsby!
+demo: Demo Link
+repo: Repo Link
+thumb: ../images/thumbs/currentportfolio.png
+frontPage: true
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# My Current Portoflio.
+
+My homepage and most recent portoflio. Rebuilt using Gatsby!
+
+| Stack | Repo                                                         | Demo                                                        |
+| ----- | ------------------------------------------------------------ | ----------------------------------------------------------- |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/weather-app) | [Check it Out](https://weatherapp-iamjoconnell.netlify.app) |
+| CSS   |                                                              |                                                             |
+| JS    |                                                              |                                                             |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='IMAGE ALT TEXT' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+I needed a place to showcase my work. My current portoflio hadn't received an update in a while so I took this as a challenge to bring my portoflio site up to date, as well as learn something new.
+
+I have had my eye on Gatsby for a while. I was intreguied by GraphQL and how that all worked, so I saw this as a great opportunity.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+I used React because I'm really enjoying component based thinking and design. It makes building up pages easy and was perfect in this case becasuse i knew I'd have lots of resuable elements, like cards and buttons; Perfect for components.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+Portfolio's are always evolving, I'm sure I'll come up with some things I'd like to change given some time. but I'm pretty happy with this for now.
+
+It was a larger project, and now that Its done I'm wondering if React was necessary. I didnt use much state management, and I'm sure there are other ways to build up components...
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+This was my first time working with a static site generator or with Gatsby and GraphQL. I had some issues determining how I wanted to structure my queries. Turns out I needed both static and page queries to get the job done.
+
+I also had a fair challenge styling my markdown pages. I decided to make template files and imported custom shortcodes and components into them to create a layout for each post and project. It took some time to figure out, but worked out pretty well. Needed an MDXProvider for each....wont forget that!
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+Enough about Gatsby to rebuild my portfolio with it!
+
+<br />
+
+Working on this leaves me feeling more dialed in to the big picture of a project. I quickly discovered the importance of good folder structure. I learned
+the value of planning, and how much more valuable having good documentation is, when that plan inevitibly fails.
+
+<br />
+
+I've always understood the benefits of variables in CSS. Now I can personally attest to their value. With so many components, not having variables would have been an nightmare, If i were to my mind on the styling. Which I certainly will do.
+
+</LessonsLearned>

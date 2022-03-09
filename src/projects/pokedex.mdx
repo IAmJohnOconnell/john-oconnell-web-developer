@@ -1,0 +1,75 @@
+---
+title: Pokedex V2 - React
+stack: React, Axios
+description: V2 of my Pokedex app. This time built with React and Styled-Components
+demo: https://pokedexv2-iamjoconnell.netlify.app/
+repo: https://github.com/IAmJohnOconnell/pokedexv2
+thumb: ../images/thumbs/PokedexV2.png
+frontPage: true
+---
+
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
+
+<ProjectHeader>
+
+# Pokedex V2
+
+I wanted some practice with React, so I decided to rebild my old Pokedex, and add a few features along the way.
+
+| Stack | Repo                                                       | Demo                                                        |
+| ----- | ---------------------------------------------------------- | ----------------------------------------------------------- |
+| HTML  | [Repository](https://github.com/IAmJohnOconnell/pokedexv2) | [Check it Out](https://pokedexv2-iamjoconnell.netlify.app/) |
+| CSS   |                                                            |                                                             |
+| JS    |                                                            |                                                             |
+
+</ProjectHeader>
+
+<ImgContainer>
+	<GatsbyImage alt='pokedex app' image={getImage(props.image)} />
+</ImgContainer>
+
+<ProjectDetailFlexContainer>
+
+<ProjectSection>
+
+## Project Purpose and Goal
+
+This was an exercise in using React. I was able to reinforce what I had learned so far, and well as add a few new features, such as: Dark/Light Toggle, A Search / Filter component and a much better looking "Pokemon Card" that displays more information.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Web Stack and Explaination
+
+This was built using React, CSS Modules, Styled-Components and Axios. React's component based workflow made creating the individual components of my app a breeze, and made DOM manipulation much easier than in the vanilla JS version. Because I needed to easily gather data for a lot of different pokemon I decided to go with Axios to help with fetching, combined with React's UseEffect hook, which kept an eye on my PokemonData state, and updated it to include data of each Pokemon as it was fetched. CSS Modules were great for keeping my CSS clean and moduler in relation to my compnents; no specificity or namespace issues here!. Additionally, because Styled-Components has wonderfully written documentation, I was able to implement a custom theme as well as a dark / light toggler.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Room For Improvements
+
+Based on the design of this one, I didnt see the need to add a storage solution - like I touched on in this section for my V1 Pokedex. This time around I opted insted to try and come up with my own CSS PokemonCard that matches a physical card as closely as possible. I'm pretty proud of it!
+
+Something that I would like to add, would be an interactive "Evolution Chain" that can created as a component and added to the bottom of a Pokemon Card, allowing you to traverse up and down its evolution chain and view detailed information about the Pokemon within.
+
+</ProjectSection>
+
+<ProjectSection>
+
+## Problems and Thought Process
+
+My initial problem was figuring out how to tackle the API calls and how to properly massage the data into something I could use. I opted to gather all of the Pokemon at once and load them in state at runtime. Because this takes a while, I added a loading spinner. Creating the PokemonCard from CSS was a challenge as well, but I was able to accomplish what I wanted to. Because of this, I ended up with a deep appreciation for the subtleties of their design. Styled-Components made it easy to dynamically alter my CSS when I needed to. For example: Grabbing the proper energy type for each pokemon, was an area made easier by this.
+
+</ProjectSection>
+
+</ProjectDetailFlexContainer>
+
+<LessonsLearned>
+
+## Lessons Learned
+
+React workflow. Getting beyond the basics of Styled-Components. I got much better at Reading documentation and applying the concepts there into practical knowledge and running code. It was a nice refresher on Promises and working with Objects as well. I was able deeply compare and contrast the differences between a framework like React and vanilla JavaScript, and now have a better understanding of how each is used pratically, and when to call on in a particular situation.
+
+</LessonsLearned>
