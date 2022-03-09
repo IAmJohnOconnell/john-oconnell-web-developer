@@ -94,8 +94,6 @@ const RecentWork = ({ data }) => {
 		return featured.node.childMdx.frontmatter.frontPage
 	})
 
-	console.log(frontPageProjects)
-
 	const projectsGroupA = []
 	const projectsGroupB = []
 	for (let i = 0; i < frontPageProjects.length; i++) {

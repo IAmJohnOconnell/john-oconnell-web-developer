@@ -85,7 +85,7 @@ const Nav = () => {
 
 	return (
 		<StyledNav>
-			<ul isOpen={isOpen}>
+			<ul>
 				<Logo>
 					<Link to={"/"}>{`< JO / >`}</Link>
 				</Logo>
@@ -99,7 +99,7 @@ const Nav = () => {
 					</li>
 
 					<li>
-						<a href='https://blog.jtocodes.com'>Hashnode</a>
+						<a href='https://blog.jtocodes.com'>Articles</a>
 					</li>
 				</NavLinks>
 				<Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />

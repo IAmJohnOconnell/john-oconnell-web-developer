@@ -2,15 +2,12 @@ import React from "react"
 import Paragraph from "../Paragraph"
 import SectionHeader from "../SectionHeader"
 import SectionHeading from "../SectionHeading"
-import { Link } from "gatsby"
 import TextContent from "../TextContent"
 import SubContainer from "../SubContainer"
 
 import styled from "styled-components"
 
 const ArticlesContainer = styled(SubContainer)`
-	/* padding: 7rem 2rem;/ */
-
 	a,
 	a:visited,
 	a:active {
@@ -39,7 +36,7 @@ const Articles = () => {
 					I enjoy writing tutorials and articles about web devevelopment. It's
 					an helps to reinforce what I've learned, and is a small way of giving
 					back to a community that has always been very helpful to me. You can
-					check those out <Link to={"/blog"}>here</Link>.
+					check those out <a href='https://blog.jtocodes.com'>here</a>.
 				</Paragraph>
 			</TextContent>
 		</ArticlesContainer>

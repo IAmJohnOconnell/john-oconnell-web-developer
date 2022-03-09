@@ -29,7 +29,7 @@ const FooterLinks = () => {
 				<a href='https://codepen.io/IAmJohnOConnell/pens/showcase'>Codepen</a>
 			</li>
 			<li>
-				<a href='https://blog.jtocodes.com'>Blog</a>
+				<a href='https://blog.jtocodes.com'>Articles</a>
 			</li>
 		</StyledFooterLinks>
 	)

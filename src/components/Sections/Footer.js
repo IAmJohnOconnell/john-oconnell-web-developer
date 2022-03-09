@@ -9,7 +9,6 @@ const StyledFooter = styled.footer`
 	width: 100%;
 	background-color: ${({ theme }) => theme.bgOverlay};
 	box-shadow: ${({ theme }) => theme.boxShadow};
-	/* color: ${({ theme }) => theme.textColorFaded}; */
 	font-size: 1.2rem;
 	letter-spacing: 0.04rem;
 	transition: ${({ theme }) => theme.transitionStandard};
@@ -91,12 +90,13 @@ const Email = styled.p`
 		transform: scale(1.03) translateY(-0.5rem);
 	}
 `
-const Resume = styled.p`
+const Resume = styled.a`
 	width: fit-content;
 	margin: 1em 0;
 	border-bottom: 2px solid transparent;
 	color: ${({ theme }) => theme.textColorSecondary};
 	transition: ${({ theme }) => theme.transitionStandard};
+	cursor: pointer;
 
 	:hover {
 		border-bottom: 2px solid white;
