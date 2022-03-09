@@ -8,12 +8,16 @@ const StyledNav = styled.nav`
 	width: 100%;
 	text-shadow: none;
 	background-color: ${({ theme }) => theme.bgNav};
+	-webkit-backdrop-filter: blur(6px);
 	backdrop-filter: blur(6px);
 	z-index: 1;
 
 	ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		gap: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
 		margin: 2rem auto;
@@ -22,6 +26,8 @@ const StyledNav = styled.nav`
 		max-width: 1200px;
 
 		div {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
 		}
 	}
@@ -76,6 +82,7 @@ const Logo = styled.li`
 
 	:hover {
 		color: ${({ theme }) => theme.textColorSecondary};
+		-webkit-transform: scale(1.1);
 		transform: scale(1.1);
 	}
 `

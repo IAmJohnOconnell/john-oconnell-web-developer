@@ -4,6 +4,8 @@ import FooterLinks from "../UI/FooterLinks"
 import resume from "../../assets/resume.pdf"
 
 const StyledFooter = styled.footer`
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 2rem;
 	width: 100%;
@@ -24,12 +26,14 @@ const StyledFooter = styled.footer`
 	}
 `
 const FooterContent = styled.div`
+	display: -ms-grid;
 	display: grid;
 	grid-template-areas: "left" "middle" "right" "bottom";
 	margin: 0 auto;
 
 	@media screen and (min-width: 40rem) {
 		grid-template-areas: "left middle right" ". bottom .";
+		-ms-grid-columns: (minmax(100px, 1fr)) [auto-fit];
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	}
 
@@ -53,7 +57,10 @@ const FooterSection = styled.div`
 		transition: ${({ theme }) => theme.transitionStandard};
 
 		:hover {
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
 			width: fit-content;
+			-webkit-transform: scale(1.03) translateY(-0.5rem);
 			transform: scale(1.03) translateY(-0.5rem);
 		}
 	}
@@ -79,6 +86,8 @@ const FooterSection = styled.div`
 `
 
 const Email = styled.p`
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	margin: 1em 0;
 	border-bottom: 2px solid transparent;
@@ -87,10 +96,13 @@ const Email = styled.p`
 
 	:hover {
 		border-bottom: 2px solid ${({ theme }) => theme.textColorSecondary};
+		-webkit-transform: scale(1.03) translateY(-0.5rem);
 		transform: scale(1.03) translateY(-0.5rem);
 	}
 `
 const Resume = styled.a`
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	margin: 1em 0;
 	border-bottom: 2px solid transparent;
@@ -100,6 +112,7 @@ const Resume = styled.a`
 
 	:hover {
 		border-bottom: 2px solid white;
+		-webkit-transform: scale(1.03) translateY(-0.5rem);
 		transform: scale(1.03) translateY(-0.5rem);
 	}
 `

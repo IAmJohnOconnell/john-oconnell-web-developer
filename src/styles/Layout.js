@@ -30,7 +30,7 @@ body {
 	line-height: 1.6;
 }
 
-a {	width: fit-content;}
+a {	width: -webkit-fit-content;	width: -moz-fit-content;	width: fit-content;}
 
 p {
 	font-family: ${({ theme }) => theme.fontSecondary};
@@ -38,11 +38,18 @@ p {
 `
 
 const Site = styled.div`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	min-height: 100vh;
 `
 const SiteContent = styled.div`
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
 	flex-grow: 1;
 	margin-top: 2.5rem;
 `

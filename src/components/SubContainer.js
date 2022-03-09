@@ -2,19 +2,17 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledContainer = styled.section`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 
 	margin: 2rem auto;
 	padding: 2rem;
-
-	/* :nth-of-type(0) {
-		margin-bottom: 0;
-	}
-	:nth-of-type(2) {
-		margin-top: 0;
-	} */
 
 	@media screen and (min-width: 960px) {
 		max-width: 940px;

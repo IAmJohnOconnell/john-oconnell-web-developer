@@ -5,9 +5,16 @@ import styled from "styled-components"
 import { FadeIn } from "../../styles/Keyframes"
 
 const AboutWrapper = styled.div`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: start;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 2rem;
 	gap: 2rem;

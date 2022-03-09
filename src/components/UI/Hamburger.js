@@ -2,8 +2,12 @@ import React from "react"
 import styled from "styled-components"
 
 const Burger = styled.div`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-flow: column;
 	flex-flow: column;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	gap: 0;
 	width: 2rem;

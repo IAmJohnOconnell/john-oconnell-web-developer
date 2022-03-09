@@ -17,7 +17,12 @@ const SkillsSubContainer = styled(SubContainer)`
 `
 
 const Skill = styled.div`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 `
 
@@ -27,8 +32,15 @@ const SkillsTextContent = styled(TextContent)`
 `
 
 const SkillsContent = styled.section`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width: 100%;
 
@@ -43,6 +55,9 @@ const SkillsContent = styled.section`
 	}
 
 	@media screen and (min-width: 60rem) {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
 	}
 `

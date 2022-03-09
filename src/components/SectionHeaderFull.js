@@ -3,7 +3,12 @@ import styled from "styled-components"
 import { FadeUpIn } from "../styles/Keyframes"
 
 const StyledSectionHeaderFull = styled.header`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin: 5rem 0;
 	text-align: center;

@@ -8,6 +8,7 @@ const StyledProjectCard = styled.div`
 	border-radius: 1rem;
 
 	:hover {
+		-webkit-transform: translateY(-1rem);
 		transform: translateY(-1rem);
 
 		.overlay {

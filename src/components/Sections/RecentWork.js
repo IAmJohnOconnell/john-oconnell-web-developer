@@ -10,7 +10,9 @@ import SectionHeading from "../SectionHeading"
 import Paragraph from "../Paragraph"
 
 const Projects = styled.div`
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr;
 	grid-template-columns: 1fr;
 	grid-auto-flow: row;
 	gap: 5rem;
@@ -27,6 +29,7 @@ const RecentWorkTextContent = styled(TextContent)`
 `
 
 const Project = styled.div`
+	display: -ms-grid;
 	display: grid;
 	grid-template-areas: "image" "title" "desc" "button";
 
@@ -72,6 +75,7 @@ const Project = styled.div`
 	:hover {
 		.image {
 			transition: ${({ theme }) => theme.transitionStandard};
+			-webkit-transform: scale(1.03);
 			transform: scale(1.03);
 			box-shadow: ${({ theme }) => theme.hoverShadow};
 		}

@@ -2,11 +2,13 @@ import { keyframes } from "styled-components"
 
 export const FadeUpIn = keyframes`
   0% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 `
@@ -29,14 +31,17 @@ export const FadeOut = keyframes`
 `
 export const Hop = keyframes`
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
 
   }
   50% {
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
   }
 
   to {
-          transform: translateY(0);
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
   }
 `

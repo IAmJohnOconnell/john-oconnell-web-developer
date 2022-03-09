@@ -3,10 +3,17 @@ import styled from "styled-components"
 
 const Section = styled.section`
 	margin: 5rem auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 100%;
 	flex: 0 1 100%;
 	text-align: center;
 	place-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 2em;
 	background-color: ${({ theme }) => theme.bgOverlay};

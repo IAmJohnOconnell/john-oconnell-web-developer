@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledFooterLinks = styled.footer`
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 1em;
 	list-style: none;

@@ -5,6 +5,7 @@ import SocialLinks from "../UI/SocialLinks"
 import { FadeUpIn } from "../../styles/Keyframes"
 
 const HeroSection = styled.section`
+	display: -ms-grid;
 	display: grid;
 	grid-template-areas: "name" "paragraph" "social";
 	place-content: center;
@@ -30,12 +31,15 @@ const Blurb = styled.h2`
 	animation: ${FadeUpIn} 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 
 	:nth-of-type(1) {
+		-webkit-animation-delay: 0.2s;
 		animation-delay: 0.2s;
 	}
 	:nth-of-type(2) {
+		-webkit-animation-delay: 0.4s;
 		animation-delay: 0.4s;
 	}
 	:nth-of-type(3) {
+		-webkit-animation-delay: 0.6s;
 		animation-delay: 0.6s;
 	}
 `
