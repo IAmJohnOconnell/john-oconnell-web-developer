@@ -83,18 +83,3 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
-// TODO - Home
-//
-//
-// - Projects Index
-//
-// - Project Details
-// fill in missing steppign stone details
-//
-//
-//
-// - Blog Index
-//	populate articles
-//
-// - - Blog Details
-//
