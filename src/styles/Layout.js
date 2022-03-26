@@ -7,6 +7,7 @@ import "@fontsource/poppins/700.css"
 import "@fontsource/open-sans"
 import { Theme } from "./Theme"
 import Nav from "../components/Nav"
+import { Helmet } from "react-helmet"
 
 export const GlobalStyle = createGlobalStyle`
 *, ::after, ::before {
@@ -59,6 +60,18 @@ const Layout = ({ children }) => {
 		<ThemeProvider theme={Theme}>
 			<>
 				<GlobalStyle />
+				<Helmet>
+					<html lang='en' />
+					<meta
+						name='viewport'
+						content='width=device-width, initial-scale=1.0'
+					/>
+					<title>John OConnell | Web Developer</title>
+					<meta
+						name='description'
+						content="John O'Connell is a Web Developer from Florida. My passion is creating beautiful websites, writing about web development and exploring all of the latest web development trends and technologies. This site is a portfolio of my work."
+					/>
+				</Helmet>
 				<Site>
 					<Nav />
 					<SiteContent>{children}</SiteContent>

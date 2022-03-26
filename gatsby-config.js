@@ -3,10 +3,13 @@ const path = require("path")
 module.exports = {
 	siteMetadata: {
 		title: `John OConnell | Web Developer`,
-		siteUrl: `https://www.yourdomain.tld`,
+		description:
+			"John O'Connell is a Web Developer from Florida. My passion is creating beautiful websites, writing about web development and exploring all of the latest web development trends and technologies. This site is a portfolio of my work.",
+		siteUrl: `https://www.jtocodes.com`,
 	},
 	plugins: [
 		"gatsby-plugin-styled-components",
+		"gatsby-plugin-react-helmet",
 		"gatsby-plugin-image",
 		"gatsby-plugin-react-helmet",
 		"gatsby-plugin-sharp",
