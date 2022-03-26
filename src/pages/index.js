@@ -10,7 +10,6 @@ import Articles from "../components/Sections/Articles"
 const IndexPage = ({ data }) => {
 	return (
 		<Layout>
-			<title>Home Page</title>
 			<Hero />
 			<About />
 			<Skills />
