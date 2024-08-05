@@ -70,32 +70,35 @@ const Skills = () => {
 					<SectionHeader>
 						<SectionHeading>My Skills</SectionHeading>
 						<p className='small'>
-							#1 Web Dev in the neighborhood - Independant Study
+							#1 Web Dev in the neighborhood - Independent Study
 						</p>
 					</SectionHeader>
 					<Paragraph>
-						As I've progressed as a developer, Ive gained a solid understanding
+						As I've progressed as a developer, I've continued to gain a deeper understanding
 						of web development concepts. I invest my time practicing what I've
-						learned, and apply these concepts to real-world scenarios and
-						projects.
+						learned, and apply these concepts to real-world scenarios. I'll always be a student development and design, looking for something new to learn. Here are some skills I've used professionally, and am pretty good at.
 					</Paragraph>
 				</SkillsTextContent>
 				<SkillsContent>
 					<Skill>
 						<span>HTML & CSS</span>
+						<span>Javascript ES6</span>
 						<span>SASS</span>
 					</Skill>
 					<Skill>
-						<span>Javascript ES6</span>
+						<span>Typescript</span>
+						<span>Angular</span>
 						<span>React</span>
 					</Skill>
 					<Skill>
+						<span>Angular Material</span>
 						<span>Gatsby</span>
 						<span>Styled-Components</span>
 					</Skill>
 					<Skill>
 						<span>Node</span>
 						<span>Git & Version Control</span>
+						<span>Storybook</span>
 					</Skill>
 				</SkillsContent>
 			</SkillsSubContainer>

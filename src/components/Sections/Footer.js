@@ -123,7 +123,7 @@ const Footer = () => {
 			<FooterContent>
 				<FooterSection>
 					<h3>Lets Build Something Together</h3>
-					<p>My brain requires constant stimulation, and I love a challenge.</p>
+					<p>I'm always looking for something to do, and I love a challenge.</p>
 					<Email>Johnathano619@gmail.com</Email>
 					<Resume href={resume} download='John_OConnell_Resume'>
 						Download My Resume

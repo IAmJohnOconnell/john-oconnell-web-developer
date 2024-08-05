@@ -35,6 +35,10 @@ const AboutWrapper = styled.div`
 const AboutParagraph = styled(Paragraph)`
 	margin: 0;
 
+	a {
+		color: #ffde91;
+	}
+
 	@media screen and (min-width: 960px) {
 		margin-bottom: 5rem;
 	}
@@ -49,23 +53,19 @@ const About = () => {
 		<AboutWrapper>
 			<TextContent>
 				<AboutParagraph>
-					I work at EONE, on our product configurator and its suite of
-					supporting applications.
+					I work at <a href="https://www.meevo.com">Meevo</a>. Lovingly building the Beauty & Wellness industry's most beloved software.
+					I split time between Product Design and a Scrum team, designing the look and feel of Meevo for years to come, and bringing new features to life.
 					<br />
 					<br />
-					Together with my colleagues I implement new features, bug fixes and
-					performance improvements to help our global network of dealers build
-					and sell Emergency Vehicles.
+					Together with my colleagues I implement new features, build component libraries, style guides, fix bugs and evolve user experiences into measureable improvements for both the user and the business.
 				</AboutParagraph>
 			</TextContent>
 			<TextContent>
 				<AboutParagraph>
-					My experience in both professional and personal work focuses on my
-					core strengths in JavaScript and Front End Development.
+					My core strengths in JavaScript and Front End Development are complimented by my passion for UI/UX work and design. I care deeply about building high quality experiences and find fulfillment in building things people enjoy.
 					<br />
 					<br />
-					I’ve worked with a diverse range of APIs and am always excited to
-					learn and take on a new challenge.
+					I have experience with popular frameworks and libraries such as Angular and React, and am always excited to learn, and face new challenges.
 				</AboutParagraph>
 			</TextContent>
 		</AboutWrapper>
