@@ -33,9 +33,9 @@ const Articles = () => {
 			</SectionHeader>
 			<TextContent>
 				<Paragraph>
-					I enjoy writing tutorials and articles about web devevelopment. It's
+					Sometimes I enjoy writing tutorials and articles about web devevelopment. It's
 					an helps to reinforce what I've learned, and is a small way of giving
-					back to a community that has always been very helpful to me. You can
+					back to a community that has always been very helpful to me. It's probably been a while, but you can
 					check those out <a href='https://blog.jtocodes.com'>here</a>.
 				</Paragraph>
 			</TextContent>

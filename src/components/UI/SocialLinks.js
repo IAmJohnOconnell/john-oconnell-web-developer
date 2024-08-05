@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Github from "../../images/SVG/github.svg"
-import Codepen from "../../images/SVG/codepen.svg"
 import Hashnode from "../../images/SVG/hashnode.svg"
 import { FadeUpIn } from "../../styles/Keyframes"
 import { Hop } from "../../styles/Keyframes"
@@ -12,14 +11,14 @@ const StyledSocialLinks = styled.div`
 	display: flex;
 	gap: 1em;
 	margin: 1.3rem 0;
-	transition: ${({ theme }) => theme.transitionStandard};
+	transition: ${ ( { theme } ) => theme.transitionStandard };
 
 	opacity: 0;
-	animation: ${FadeUpIn} 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+	animation: ${ FadeUpIn } 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 
 	svg {
-		fill: ${({ theme }) => theme.textColorSecondary};
-		transition: ${({ theme }) => theme.transitionStandard};
+		fill: ${ ( { theme } ) => theme.textColorSecondary };
+		transition: ${ ( { theme } ) => theme.transitionStandard };
 
 		:hover {
 			fill: white;
@@ -31,10 +30,10 @@ const StyledSocialLinks = styled.div`
 	a,
 	a:visited,
 	a:active {
-		color: ${({ theme }) => theme.textColorSecondary};
+		color: ${ ( { theme } ) => theme.textColorSecondary };
 		text-decoration: none;
-		-webkit-animation: ${Hop} 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-		animation: ${Hop} 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+		-webkit-animation: ${ Hop } 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+		animation: ${ Hop } 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
 		:nth-of-type(1) {
 			-webkit-animation-delay: 1s;
@@ -51,16 +50,13 @@ const StyledSocialLinks = styled.div`
 	}
 `
 
-const SocialLinks = ({ className }) => {
+const SocialLinks = ( { className } ) => {
 	return (
-		<StyledSocialLinks className={className}>
+		<StyledSocialLinks className={ className }>
 			<a href='https://github.com/IAmJohnOconnell'>
 				<Github />
 			</a>
 
-			<a href='https://codepen.io/IAmJohnOConnell/pens/showcase'>
-				<Codepen />
-			</a>
 
 			<a href='https://blog.jtocodes.com'>
 				<Hashnode />
