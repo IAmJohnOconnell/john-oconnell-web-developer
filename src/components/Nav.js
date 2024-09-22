@@ -104,10 +104,6 @@ const Nav = () => {
 					<li>
 						<Link to={"/projects"}>Projects</Link>
 					</li>
-
-					<li>
-						<a href='https://blog.jtocodes.com'>Articles</a>
-					</li>
 				</NavLinks>
 				<Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
 			</ul>

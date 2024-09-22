@@ -5,7 +5,6 @@ import Hero from "../components/Sections/Hero"
 import About from "../components/Sections/About"
 import Skills from "../components/Sections/Skills"
 import RecentWork from "../components/Sections/RecentWork"
-import Articles from "../components/Sections/Articles"
 
 const IndexPage = ({ data }) => {
 	return (
@@ -14,7 +13,6 @@ const IndexPage = ({ data }) => {
 			<About />
 			<Skills />
 			<RecentWork data={data} />
-			<Articles />
 		</Layout>
 	)
 }

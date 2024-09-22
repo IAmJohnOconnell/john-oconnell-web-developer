@@ -27,9 +27,6 @@ const FooterLinks = () => {
 			<li>
 				<a href='https://github.com/IAmJohnOconnell'>Github</a>
 			</li>
-			<li>
-				<a href='https://blog.jtocodes.com'>Articles</a>
-			</li>
 		</StyledFooterLinks>
 	)
 }
