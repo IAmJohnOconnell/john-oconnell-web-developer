@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Github from "../../images/SVG/github.svg"
-import Hashnode from "../../images/SVG/hashnode.svg"
 import { FadeUpIn } from "../../styles/Keyframes"
 import { Hop } from "../../styles/Keyframes"
 
@@ -55,11 +54,6 @@ const SocialLinks = ( { className } ) => {
 		<StyledSocialLinks className={ className }>
 			<a href='https://github.com/IAmJohnOconnell'>
 				<Github />
-			</a>
-
-
-			<a href='https://blog.jtocodes.com'>
-				<Hashnode />
 			</a>
 		</StyledSocialLinks>
 	)

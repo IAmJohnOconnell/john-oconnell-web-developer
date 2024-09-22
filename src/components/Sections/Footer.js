@@ -1,7 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import FooterLinks from "../UI/FooterLinks"
-import resume from "../../assets/resume.pdf"
 
 const StyledFooter = styled.footer`
 	-webkit-box-pack: justify;
@@ -125,13 +123,6 @@ const Footer = () => {
 					<h3>Lets Build Something Together</h3>
 					<p>I'm always looking for something to do, and I love a challenge.</p>
 					<Email>Johnathano619@gmail.com</Email>
-					<Resume href={resume} download='John_OConnell_Resume'>
-						Download My Resume
-					</Resume>
-				</FooterSection>
-				<FooterSection></FooterSection>
-				<FooterSection>
-					<FooterLinks />
 				</FooterSection>
 			</FooterContent>
 		</StyledFooter>
